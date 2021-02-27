@@ -58,7 +58,7 @@ for (let trackNumber = 0; trackNumber < midi.tracks.length; trackNumber++) {
 
     for (let note of notes) {
         const [bar, noteName] = [note.bars, note.name]
-        const SECOND_PER_EIGHTH_NOTE = 0.4
+        const SECOND_PER_EIGHTH_NOTE = 0.2
         const REDSTONE_TICKS_PER_EIGHTH_NOTE = SECOND_PER_EIGHTH_NOTE * REDSTONE_TICKS_PER_SECOND_IN_MINECRAFT //tempo
         const ordinalOfEighthNote = bar * midi.header.timeSignatures[0].timeSignature[0] * (8 / midi.header.timeSignatures[0].timeSignature[1])
         // console.log(ordinalOfEighthNote)
